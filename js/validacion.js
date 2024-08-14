@@ -17,7 +17,7 @@ document.getElementById("regBtn").addEventListener("click", function(){
     if(!name||!lastName||!email||!pasword||!repPassword||!term){
         showAlertError()
         return;
-        }
+    }
     if ( password !== repPassword && !term ){
         showAlertError()
         return;
