@@ -14,7 +14,7 @@ document.getElementById("regBtn").addEventListener("click", function(){
     const repPassword = document.getElementById("password2").value.trim()
     const term = document.getElementById("terminos").checked
     
-    if(!name||!lastName||!email||!pasword||!repPassword||!term){
+    if(!name||!lastName||!email||!password||!repPassword||!term){
         showAlertError()
         return;
     }
