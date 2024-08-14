@@ -16,15 +16,10 @@ document.getElementById("regBtn").addEventListener("click", function(){
     
     if(!name||!lastName||!email||!password||!repPassword||!term){
         showAlertError()
-        return;
-    }
-    if ( password !== repPassword && !term ){
+    } else if ( password !== repPassword && !term ){
         showAlertError()
-        return;
-    }
-    if (password.length < 6) {
+    } else if (password.length < 6) {
         showAlertError()
-        return;
-    }
-        showAlertSuccess()
+    } else
+        showAlertSuccess();
 })
