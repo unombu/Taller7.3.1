@@ -18,13 +18,13 @@ document.getElementById("regBtn").addEventListener("click", function(){
         showAlertError()
         return;
         }
-    if ( pasword !== repPassword && term ){
+    if ( pasword !== repPassword && !term ){
         showAlertError()
         return;
     }
     if (password1.length < 6) {
-showAlertError()
-      return;
+        showAlertError()
+        return;
     }
-     showAlertSuccess()
+        showAlertSuccess()
 })
