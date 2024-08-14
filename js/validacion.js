@@ -13,7 +13,7 @@ document.getElementById("regBtn").addEventListener("click", function(){
     const pasword = document.getElementById("password1").value.trim()
     const repPassword = document.getElementById("password2").value.trim()
     const term = document.getElementById("terminos").checked
-    if ( pasword === repPassword || term.checked )
+    if ( pasword === repPassword && term.checked )
         showAlertSuccess();
     else
         showAlertError(); 
