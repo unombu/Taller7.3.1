@@ -9,3 +9,12 @@ function showAlertError() {
 document.getElementById("regBtn").addEventListener("click", function(){
     
 })
+
+function validarContra() {
+    const password = document.getElementById("col-sm-6").value;
+    if (password.length < 6) {
+        showAlertError();
+    } else {
+        showAlertSuccess();
+    }
+  }
