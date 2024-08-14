@@ -13,8 +13,18 @@ document.getElementById("regBtn").addEventListener("click", function(){
     const pasword = document.getElementById("password1").value.trim()
     const repPassword = document.getElementById("password2").value.trim()
     const term = document.getElementById("terminos").checked
-    if ( pasword === repPassword && term.checked )
-        showAlertSuccess();
-    else
-        showAlertError(); 
+    
+    if(!name||!lastName||!email||!pasword||!repPassword||!term){
+        showAlertError()
+        return;
+        }
+    if ( pasword !== repPassword && term ){
+        showAlertError()
+        return;
+    }
+    if (password1.length < 6) {
+showAlertError()
+      return;
+    }
+     showAlertSuccess()
 })
